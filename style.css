@@ -1,0 +1,22 @@
+.btn{
+    background-color: #dec282;
+    border: none;
+}
+.btn:hover{
+    background-color: #fcc757;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.container{
+    background-color: rgb(47, 46, 46);
+    border: 1.5px solid aliceblue;
+    border-radius: 5px;
+}
+.inp{
+    text-align: right;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
