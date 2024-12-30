@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container text-center w-25 p-3 position-absolute top-50 start-50 translate-middle">
+    <input id="display" class="container inp w-100 p-2" readonly>
+    <div class="row row-cols-5 mt-2 m-3 gap-3 ">  
+      <button type="button" class="btn btn-primary" onclick="clearDisplay()">C</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('%')">%</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('/')">/</button>    
+    </div>
+    <div class="row row-cols-5 mt-2 m-3 gap-3 ">  
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('7')">7</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('8')">8</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('8')">9</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('*')">x</button>    
+
+    </div>
+    <div class="row row-cols-5 mt-2 m-3 gap-3 ">  
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('4')">4</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('5')">5</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('6')">6</button>  
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('-')">-</button>
+
+    </div>
+    <div class="row row-cols-5 mt-2 m-3 gap-3 ">  
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('1')">1</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('2')">2</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('3')">3</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('+')">+</button>   
+
+    </div>
+    <div class="row row-cols-5 mt-2 m-3 gap-3 ">  
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('0')">0</button>
+      <button type="button" class="btn btn-primary" onclick="appedToDisplay('.')">.</button>
+      <button type="button" class="btn btn-primary" onclick="calculate()">=</button>   
+
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
